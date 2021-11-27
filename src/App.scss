@@ -1,0 +1,104 @@
+@import "./libs/reset";
+
+.App{
+  width: calc(100% - 100px);
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.houses--wrapper{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  gap: 20px;
+
+}
+
+.house{
+  border: 2px solid gray;
+  padding: 10px;
+  border-radius: 10px;
+  letter-spacing: 0.5px;
+  & h1{
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid gray;
+  }
+  & li {
+    margin-left: 15px;
+    margin-bottom: 10px;
+  }
+}
+
+.character--wrapper{
+  max-width: 1000px;
+
+}
+
+.character{
+  border: 2px solid gray;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+
+  & h1{
+    font-weight: bold;
+    font-size: 40px;
+  }
+
+  & h2{
+    font-weight: bold;
+    font-size: 30px;
+    border-bottom: 2px solid gray;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  & h3{
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  & p{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 35px;
+    text-indent: 20px;
+  }
+}
+
+.link--member{
+  color: black;
+  font-size: 20px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  font-style: italic;
+  font-weight: bold;
+
+  &:hover{
+    color: rgba(0,0,0,0.7);
+  }
+}
+
+.link--back{
+  color: black;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 5px;
+
+  &:hover{
+    color: gray;
+  }
+}
